@@ -1,6 +1,6 @@
 import MemoriesCard from "./card";
 import photo1 from "@/assets/demo/memories/ouverture.jpg";
-import photo2 from "@/assets/demo/memories/businessman-executive-professional-entrepreneur-concept.jpg";
+import photo2 from "@/assets/demo/memories/businessman.jpg";
 import BaseContainer from "../../../layout/container";
 import TitleSection from "../../../layout/title/section";
 

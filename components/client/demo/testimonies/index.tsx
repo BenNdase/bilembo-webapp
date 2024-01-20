@@ -1,7 +1,7 @@
 import TestimoniesCard from "./card";
 import photo1 from "@/assets/demo/memories/ami.jpg";
-import photo3 from "@/assets/demo/memories/front-view-smiley-woman-with-book.jpg";
-import photo2 from "@/assets/demo/memories/middle-aged-cheerful-dark-skinned-male-with-shining-smile.jpg";
+import photo3 from "@/assets/demo/memories/front.jpg";
+import photo2 from "@/assets/demo/memories/middle.jpg";
 import BaseContainer from "../../../layout/container";
 import TitleSection from "../../../layout/title/section";
 

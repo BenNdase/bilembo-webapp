@@ -2,9 +2,9 @@
 import Image from "next/image";
 import avatar from "@/assets/demo/Avatar.jpg";
 import { useRouter } from "next/navigation";
-import photo1 from "@/assets/demo/memories/businessman-executive-professional-entrepreneur-concept.jpg";
-import photo2 from "@/assets/demo/memories/latino-hair-salon-owner-preparing-clients.jpg";
-import photo3 from "@/assets/demo/memories/latino-hair-salon-owner-taking-care-client.jpg";
+import photo1 from "@/assets/demo/memories/businessman.jpg";
+import photo2 from "@/assets/demo/memories/latino.jpg";
+import photo3 from "@/assets/demo/memories/latino.jpg";
 import BaseContainer from "../../layout/container";
 import { ButtonLink } from "../../ui/button";
 import TitleSection from "../../layout/title/section";
@@ -163,56 +163,56 @@ const MemorialDemoSection = () => {
           <Image
             src={photo1}
             alt="image 1"
-            className="w-1/5 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+            className="w-1/5 h-[12rem] transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
             data-aos="zoom-in"
           />
           <Image
             src={photo2}
             alt="image 2"
             data-aos="zoom-in"
-            className="w-1/5 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+            className="w-1/5 h-[12rem] transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
           />
           <Image
             src={photo3}
             alt="image 3"
             data-aos="zoom-in"
-            className="w-1/5 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+            className="w-1/5 h-[12rem] transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
           />
           <Image
             src={photo1}
             alt="image 1"
             data-aos="zoom-in"
-            className="w-1/5 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+            className="w-1/5 h-[12rem] transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
           />
           <Image
             src={photo2}
             alt="image 2"
             data-aos="zoom-in"
-            className="w-1/5 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+            className="w-1/5 h-[12rem] transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
           />
           <Image
             src={photo3}
             alt="image 3"
             data-aos="zoom-in"
-            className="w-1/5 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+            className="w-1/5 h-[12rem] transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
           />
           <Image
             src={photo1}
             alt="image 1"
             data-aos="zoom-in"
-            className="w-1/5 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+            className="w-1/5 h-[12rem] transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
           />
           <Image
             src={photo2}
             alt="image 2"
             data-aos="zoom-in"
-            className="w-1/5 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+            className="w-1/5 h-[12rem] transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
           />
           <Image
             src={photo3}
             alt="image 3"
             data-aos="zoom-in"
-            className="w-1/5 transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
+            className="w-1/5 h-[12rem] transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
           />
         </div>
       </div>
