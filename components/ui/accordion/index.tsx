@@ -49,12 +49,13 @@ export const AccordionCustomIcon: React.FC<Props> = ({
   return (
     <>
       <Accordion
+        placeholder=""
         open={open === 1}
         icon={<Icon id={1} open={open} />}
         className="mb-2 rounded-lg border border-blue-gray-100 px-4 mt-6"
         data-aos="fade-up"
       >
-        <AccordionHeader onClick={() => handleOpen(1)}>
+        <AccordionHeader placeholder="" onClick={() => handleOpen(1)}>
           <p className="lg:text-lg">{title}</p>
         </AccordionHeader>
         <AccordionBody>

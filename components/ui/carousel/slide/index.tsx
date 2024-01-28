@@ -8,6 +8,7 @@ import photo3 from "@/assets/demo/Avatar.jpg";
 export function Slide() {
   return (
     <Carousel
+      placeholder=""
       className="rounded-xl"
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
