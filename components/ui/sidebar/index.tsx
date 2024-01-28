@@ -16,7 +16,7 @@ export function DefaultSidebar() {
 
   return (
     <div className="h-[78vh] w-[85vw] p-2 text-primary flex flex-col gap-3 z-90">
-      <List>
+      <List placeholder="">
         <div className="font-bold p-2">
           <a href="/qui_sommes_nous">Qui somme-nous</a>
         </div>

@@ -25,6 +25,7 @@ export const ButtonLink: React.FC<Props> = ({
   };
   return (
     <Button
+      placeholder=""
       onClick={handleClick}
       className={`rounded-full size-sm border-2 w-full normal-case text-white font-poppins text-base font-semibold md:py-4 lg:py-2 ${className} ${getVariant()}`}
       size={size}

@@ -19,14 +19,20 @@ export function TimelineWithAvatar() {
           <TimelineConnector />
           <TimelineHeader>
             <TimelineIcon className="p-0">
-              <Avatar size="xl" src="/img/team-1.jpg" alt="user 1" withBorder />
+              <Avatar
+                placeholder=""
+                size="xl"
+                src="/img/team-1.jpg"
+                alt="user 1"
+                withBorder
+              />
             </TimelineIcon>
-            <Typography variant="h5" color="blue-gray">
+            <Typography placeholder="" variant="h5" color="blue-gray">
               Timeline Title Here.
             </Typography>
           </TimelineHeader>
           <TimelineBody className="pb-8">
-            <Typography className="font-normal text-gray-600">
+            <Typography placeholder="" className="font-normal text-gray-600">
               The key to more success is to have a lot of pillows. Put it this
               way, it took me twenty five years to get these plants, twenty five
               years of blood sweat and tears, and I&apos;m never giving up,
@@ -38,14 +44,20 @@ export function TimelineWithAvatar() {
           <TimelineConnector />
           <TimelineHeader>
             <TimelineIcon className="p-0">
-              <Avatar size="xl" src="/img/team-2.jpg" alt="user 2" withBorder />
+              <Avatar
+                placeholder=""
+                size="xl"
+                src="/img/team-2.jpg"
+                alt="user 2"
+                withBorder
+              />
             </TimelineIcon>
-            <Typography variant="h5" color="blue-gray">
+            <Typography placeholder="" variant="h5" color="blue-gray">
               Timeline Title Here.
             </Typography>
           </TimelineHeader>
           <TimelineBody className="pb-8">
-            <Typography className="font-normal text-gray-600">
+            <Typography placeholder="" className="font-normal text-gray-600">
               The key to more success is to have a lot of pillows. Put it this
               way, it took me twenty five years to get these plants, twenty five
               years of blood sweat and tears, and I&apos;m never giving up,
@@ -64,12 +76,12 @@ export function TimelineWithAvatar() {
                 alt="user 3"
               />
             </TimelineIcon>
-            <Typography variant="h5" color="blue-gray">
+            <Typography placeholder="" variant="h5" color="blue-gray">
               Timeline Title Here.
             </Typography>
           </TimelineHeader>
           <TimelineBody>
-            <Typography className="font-normal text-gray-600">
+            <Typography placeholder="" className="font-normal text-gray-600">
               The key to more success is to have a lot of pillows. Put it this
               way, it took me twenty five years to get these plants, twenty five
               years of blood sweat and tears, and I&apos;m never giving up,
