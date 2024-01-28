@@ -158,11 +158,15 @@ const Navbar: React.FC<Props> = ({ className, width }) => {
         >
           <Menu placement="bottom-end">
             <MenuHandler>
-              <IconButton variant="text" className="p-10 text-center">
+              <IconButton
+                placeholder=""
+                variant="text"
+                className="p-10 text-center"
+              >
                 <MenuIcon />
               </IconButton>
             </MenuHandler>
-            <MenuList>
+            <MenuList placeholder="">
               <DefaultSidebar />
             </MenuList>
           </Menu>
@@ -171,6 +175,7 @@ const Navbar: React.FC<Props> = ({ className, width }) => {
           <Menu placement="bottom-end">
             <MenuHandler>
               <IconButton
+                placeholder=""
                 variant="text"
                 className="text-center px-14 bg-primary-900 rounded-full hover:bg-white border border-2 border-primary-900"
               >
@@ -179,7 +184,7 @@ const Navbar: React.FC<Props> = ({ className, width }) => {
                 </span>
               </IconButton>
             </MenuHandler>
-            <MenuList>
+            <MenuList placeholder="">
               <DefaultSidebar />
             </MenuList>
           </Menu>
