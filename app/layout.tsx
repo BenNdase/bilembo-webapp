@@ -1,12 +1,12 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Khand } from "next/font/google";
 import Provider from "./provider/provider";
 
-const poppins = Poppins({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
+// const khand = Khand({
+//   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Bilembo In Memory",
@@ -22,9 +22,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <Provider>
-        <body className={`${poppins.className} text-[#272727]`}>
-          {children}
-        </body>
+        <body className={` text-[#272727]`}>{children}</body>
       </Provider>
     </html>
   );

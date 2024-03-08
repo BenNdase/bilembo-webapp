@@ -1,14 +1,23 @@
+"use client";
+
 import Image from "next/image";
 import React, { PropsWithChildren } from "react";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Typography,
+  Button,
+} from "@material-tailwind/react";
 
 export type Props = {
   className?: string;
   src: any;
-  title?: string;
-  description?: string;
+  title: string;
+  description: string;
   alt: string;
 };
-
 const MemoriesCard: React.FC<Props> = ({
   className,
   src,
@@ -17,16 +26,23 @@ const MemoriesCard: React.FC<Props> = ({
   alt,
 }) => {
   return (
-    <div
-      className="flex flex-col lg:flex-row gap-3 lg:gap-8 justify-center items-center mt-6 w-2/2 md:w-12/12 md:justify-between md:items-start"
-      data-aos="zoom-in"
-    >
-      <Image src={src} alt={alt} className="w-2/2 lg:w-3/12 lg:rounded-lg" />
-      <div className="flex flex-col gap-2">
-        <h3 className="font-bold text-xl">{title}</h3>
-        <p className="">{description}</p>
+    <Card placeholder="" shadow={false} className="mt-6 w-full">
+      <div className="flex items-start">
+        <div className="">
+          <Image
+            src={src}
+            alt={`${alt}`}
+            className="object-cover h-[14rem] w-[150rem]"
+          />
+        </div>
+        <CardBody placeholder="">
+          <h5 color="blue-gray" className="-mt-5 font-extrabold text-lg">
+            {title}
+          </h5>
+          <p>{description}</p>
+        </CardBody>
       </div>
-    </div>
+    </Card>
   );
 };
 

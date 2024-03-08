@@ -9,27 +9,27 @@ const TestimoniesSectionOfMemorial = () => {
   return (
     <BaseContainer className="mb-10">
       <TitleSection title="Témoignages" />
-      <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row lg:flex-wrap lg:mt-6">
+      <div className="flex flex-col justify-center items-center lg:justify-between gap-5 lg:gap-0 lg:flex-row lg:flex-wrap mt-6">
         <TestimoniesCard
           src={photo3}
-          title="Josephine Kilanga"
-          description="Daniel était un mari et un père magnifique, une personne calme et souriante. Paix à son âme"
+          name="Josephine Kilanga"
+          content="Daniel était un mari et un père magnifique, une personne calme et souriante. Paix à son âme"
           alt="Frere"
-          details="Femme"
+          detail="Femme"
         />
         <TestimoniesCard
           src={photo2}
-          title="Joseph Binda Kilanga"
-          description="Papa était un ami, un père et un confident pour moi. Il m'a toujours prodigué des conseils qui m'ont beaucoup aidé. Paix à son âme papa, je ne cesserai de t'aimer."
+          name="Joseph Binda Kilanga"
+          content="Papa était un ami, un père et un confident pour moi. Il m'a toujours prodigué des conseils qui m'ont beaucoup aidé. Paix à son âme papa, je ne cesserai de t'aimer."
           alt="Frere"
-          details="Fils"
+          detail="Fils"
         />
         <TestimoniesCard
           src={photo1}
-          title="Jean-Paul Mbiya"
-          description="Daniel était un ami proche, une personne calme et souriante. Paix à son âme"
+          name="Jean-Paul Mbiya"
+          content="Daniel était un ami proche, une personne calme et souriante. Paix à son âme"
           alt="Ami de"
-          details="Ami"
+          detail="Ami"
         />
       </div>
     </BaseContainer>

@@ -11,7 +11,7 @@ const BannerSectionOfHome = () => {
   return (
     <BaseContainer className="p-4 lg:flex lg:justify-between lg:items-center lg:-mt-6 lg:pb-16 lg:h-[100vh]">
       <div className="lg:w-3/5 lg:-mt-16">
-        <h1 className="text-3xl font-bold lg:text-6xl lg:leading-tight lg:font-extrabold">
+        <h1 className="text-2xl font-extrabold lg:text-5xl lg:font-extrabold">
           Parce que chaque vie qui passe sur cette terre laisse des traces
         </h1>
         <p className="text-sm py-2 lg:text-lg lg:py-9">
@@ -38,11 +38,11 @@ const BannerSectionOfHome = () => {
           </ButtonLink>
         </div>
       </div>
-      <div className="py-6 flex items-center justify-center lg:w-1/3">
+      <div className="py-6 flex items-center justify-center lg:w-1/2">
         <Image
           src={photo}
           alt="Bilembo in memory mobile"
-          className="w-3/5 lg:w-8/12"
+          className="w-3/5 lg:w-6/12"
         />
       </div>
       <div className="lg:hidden">

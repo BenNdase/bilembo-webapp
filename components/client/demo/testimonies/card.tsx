@@ -1,37 +1,44 @@
+"use client";
+import { Card, CardBody } from "@material-tailwind/react";
 import Image from "next/image";
-import React, { PropsWithChildren } from "react";
 
 export type Props = {
   className?: string;
+  content: string;
+  name: string;
+  detail: string;
   src: any;
-  title: string;
-  description: string;
   alt: string;
-  details: string;
 };
 
 const TestimoniesCard: React.FC<Props> = ({
-  className,
   src,
-  title,
-  description,
+  className,
+  content,
+  detail,
+  name,
   alt,
-  details,
 }) => {
   return (
-    <div
-      className="flex flex-col lg:px-6 gap-3 justify-center mt-6 w-2/2 lg:w-1/3 md:w-12/12 md:justify-between md:items-start"
-      data-aos="zoom-in"
+    <Card
+      placeholder=""
+      color="transparent"
+      shadow={false}
+      className="w-full max-w-[22rem]"
     >
-      <p className="">{description}</p>
-      <div className="flex gap-4">
-        <Image src={src} alt={alt} className="w-1/5 rounded-lg" />
-        <div className="flex flex-col gap-1">
-          <h3 className="font-bold text-lg">{title}</h3>
-          <p>{details}</p>
+      <CardBody placeholder="" className="mb-6 p-0">
+        <p>{content}</p>
+      </CardBody>
+      <div className="mx-0 flex items-center gap-4 pt-0 pb-4">
+        <Image src={src} alt={`${alt}`} className="w-[4rem]" />
+        <div className="flex w-full flex-col gap-0.5">
+          <div className="flex items-center justify-between">
+            <h5 className="font-extrabold">{name}</h5>
+          </div>
+          <p className="text-sm">{detail}</p>
         </div>
       </div>
-    </div>
+    </Card>
   );
 };
 
