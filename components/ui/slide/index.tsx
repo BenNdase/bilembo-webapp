@@ -15,6 +15,12 @@ const fadeImages = [
     description: `"Je suis profondément touché par l'initiative de Bilembo. La possibilité de partager les photos, la biographie et les détails de la vie passée de mon père à travers un simple code QR sur sa pierre tombale est véritablement révolutionnaire. Cette belle démarche permet de perpétuer la mémoire de mon père et offre un réconfort inestimable à toute ma famille. Bravo à Bilembo pour cette contribution précieuse à la préservation des souvenirs et à la célébration des vies passées".`,
     avatar: { ImgPrisca },
   },
+  {
+    name: "Prisca Makila",
+    detail: "CEO at KIM Engineering",
+    description: `"Je suis profondément touché par l'initiative de Bilembo. La possibilité de partager les photos, la biographie et les détails de la vie passée de mon père à travers un simple code QR sur sa pierre tombale est véritablement révolutionnaire. Cette belle démarche permet de perpétuer la mémoire de mon père et offre un réconfort inestimable à toute ma famille. Bravo à Bilembo pour cette contribution précieuse à la préservation des souvenirs et à la célébration des vies passées".`,
+    avatar: { ImgPrisca },
+  },
 ];
 
 const Slideshow = () => {
