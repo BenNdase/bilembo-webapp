@@ -28,7 +28,7 @@ const Navbar: React.FC<Props> = ({ className, width }) => {
   };
 
   const ChangeNavbar = () => {
-    if (pathname === "/memorial/demo") {
+    if (pathname === "/memorial/demo" || pathname === "/memorial/rip") {
       return "block lg:hidden";
     } else if (pathname === "/memorial/demo/biographie") {
       return "block lg:hidden";
@@ -42,7 +42,7 @@ const Navbar: React.FC<Props> = ({ className, width }) => {
   };
 
   const ChangeNavbarDemo = () => {
-    if (pathname === "/memorial/demo") {
+    if (pathname === "/memorial/demo" || pathname === "/memorial/rip") {
       return "lg:flex lg:w-4/12";
     } else if (pathname === "/memorial/demo/biographie") {
       return "lg:flex lg:w-4/12";
@@ -69,7 +69,9 @@ const Navbar: React.FC<Props> = ({ className, width }) => {
         </div>
         <div
           className={`hidden lg:flex gap-6 lg:w-5/12 items-center justify-center ${
-            pathname === "/memorial/demo" ? "lg:hidden" : "hidden"
+            pathname === "/memorial/demo" || pathname === "/memorial/rip"
+              ? "lg:hidden"
+              : "hidden"
           } ${
             pathname === "/memorial/demo/biographie" ? "lg:hidden" : "hidden"
           } ${
