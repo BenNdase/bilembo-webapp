@@ -65,7 +65,7 @@ const MemorialSection = ({
           width="900"
           height="900"
           alt={`Photo de ${name} ${lastname} ${firstname}`}
-          className="w-full md:w-4/12 lg:w-3/12"
+          className="w-[50%] rounded-full md:w-4/12 lg:w-3/12"
         />
         <div className="px-1">
           <div className="lg:mt-0 md:mt-26 w-full">

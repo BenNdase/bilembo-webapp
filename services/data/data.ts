@@ -3,7 +3,7 @@ export const datas = [
     id: 1,
     slug: "leonard_baruti_kasongo",
     profile_image:
-      "https://res.cloudinary.com/dwh18htmr/image/upload/v1722334542/Bilembo/BIOGRAPHIE_PAST._BARUTI_KASONGO-1_ao1w9h.jpg",
+      "https://res.cloudinary.com/dwh18htmr/image/upload/v1722522332/Bilembo/baruti/Baruti_1_wjpgww.jpg",
     name: "Baruti",
     firstname: "Leonard",
     lastname: "Kasongo",
@@ -56,7 +56,7 @@ export const datas = [
     id: 2,
     slug: "simeon_makila",
     profile_image:
-      "https://res.cloudinary.com/dwh18htmr/image/upload/v1722509174/Bilembo/BIOGRAPHIE_PAST._BARUTI_KASONGO-1_2_zdivkb.jpg",
+      "https://res.cloudinary.com/dwh18htmr/image/upload/v1722522135/Bilembo/simeon/simeon_7_mfdsv4.jpg",
     name: "Makila",
     firstname: "Siméon",
     lastname: "Lukian",
