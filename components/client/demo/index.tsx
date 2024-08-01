@@ -9,6 +9,9 @@ import BaseContainer from "../../layout/container";
 import { ButtonLink } from "../../ui/button";
 import TitleSection from "../../layout/title/section";
 import { Slide } from "../../ui/carousel/slide";
+import { SlideDemo } from "@/components/ui/carousel/slide/demo";
+
+const image = [photo1, photo2, photo3];
 
 const MemorialDemoSection = () => {
   const router = useRouter();
@@ -157,7 +160,7 @@ const MemorialDemoSection = () => {
           cœurs
         </p>
         <div className="mb-10 lg:hidden" data-aos="fade-up">
-          <Slide />
+          <SlideDemo />
         </div>
         <div className="hidden lg:flex gap-0 flex-wrap">
           <Image
