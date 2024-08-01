@@ -28,6 +28,8 @@ const MemorialPage = () => {
                 youth_training={data.youth_training}
                 career={data.career}
                 images={data.images}
+                cause_death={data.cause_death}
+                epilogue={data.epilogue}
               />
             )
         )}
