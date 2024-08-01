@@ -11,7 +11,7 @@ const MemorialPage = () => {
       <main>
         {datas.map(
           (data, index) =>
-            data.slug === "leonard_baruti_kasongo" && (
+            data.slug === "simeon_makila" && (
               <MemorialSection
                 key={index}
                 profile_image={data.profile_image}
@@ -28,6 +28,8 @@ const MemorialPage = () => {
                 youth_training={data.youth_training}
                 career={data.career}
                 images={data.images}
+                cause_death={data.cause_death}
+                epilogue={data.epilogue}
               />
             )
         )}

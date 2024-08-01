@@ -5,7 +5,12 @@ import photo1 from "@/assets/demo/Avatar.jpg";
 import photo2 from "@/assets/demo/Avatar.jpg";
 import photo3 from "@/assets/demo/Avatar.jpg";
 
-export function Slide() {
+export type Props = {
+  className?: string;
+  images: string[];
+};
+
+export function Slide({ images }: Props) {
   return (
     <Carousel
       placeholder=""
@@ -24,27 +29,20 @@ export function Slide() {
         </div>
       )}
     >
-      <Image
-        src={photo1}
-        alt="image 1"
-        className="h-full w-full object-cover"
-        width={200}
-        height={500}
-      />
-      <Image
-        src={photo2}
-        alt="image 2"
-        className="h-full w-full object-cover"
-        width={200}
-        height={500}
-      />
-      <Image
-        src={photo3}
-        alt="image 3"
-        className="h-full w-full object-cover"
-        width={200}
-        height={500}
-      />
+      {images && images.length > 0 ? (
+        images.map((image, index) => (
+          <Image
+            key={index}
+            width="1500"
+            height="1500"
+            className="h-full w-full object-cover"
+            src={image}
+            alt={`Image ${index}`}
+          />
+        ))
+      ) : (
+        <p>Aucune image disponible</p>
+      )}
     </Carousel>
   );
 }

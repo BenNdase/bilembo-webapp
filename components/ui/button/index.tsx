@@ -1,5 +1,5 @@
 "use client";
-import { IButton } from "@/types/base";
+import { IButton } from "@/services/types/base";
 import { Button } from "@material-tailwind/react";
 import React, { ReactNode } from "react";
 
