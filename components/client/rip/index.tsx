@@ -105,7 +105,7 @@ const MemorialSection = ({
       </div>
       <div>
         <h3 className="font-extrabold uppercase mt-4 mb-2 text-xl">
-          Jeuneusse et formation
+          Jeunesse et formation
         </h3>
         <p className="">
           <span
