@@ -44,13 +44,11 @@ export const datas = [
 
     souvenirs: [
       {
-        image:
-          "https://res.cloudinary.com/dwh18htmr/image/upload/v1718640298/asodec_p4agn1.png",
-        date: "20 Juin 1990",
-        title:
-          "Elu Pasteur de l’assemblée chrétienne de Righini, aujourd’hui Baruti Tabernacle.",
+        image: "",
+        videos: "https://www.youtube.com/embed/16kKZeDplh0?si=MKwA1KwqFascw2pI",
+        title: "22 Novembre 2020 - La Brèche",
         description:
-          "Quis quis consequat cillum cupidatat reprehenderit sit et ullamco incididunt ad et dolore velit tempor. Deserunt enim cillum veniam incididunt reprehenderit labore. Eu mollit laboris consequat eu aliqua. Dolor pariatur minim amet amet esse sit adipisicing est fugiat minim dolore. Commodo ullamco adipisicing ea sit reprehenderit enim qui elit ut aliquip esse esse pariatur sint. Aute ea et sunt consequat voluptate. Sunt occaecat ipsum minim esse exercitation do deserunt eu fugiat cillum veniam.",
+          "Dans cette prédication, Pasteur Léonard Baruti Kasongo démontre sa profonde capacité à mêler spiritualité, actualité sociale et réflexions culturelles pour toucher le cœur et l'esprit de ses auditeurs. Son message commence par une exploration des émotions humaines à travers la musique, qu'il utilise comme une porte d'entrée pour aborder des thèmes plus profonds comme la rédemption, la responsabilité humaine et l'autorité divine sur la nature. En se référant au jardin d'Éden et à la vie éternelle, il invite son public à une introspection spirituelle et à une compréhension plus large de leur relation avec Dieu. \n\n Il ne s’arrête pas aux considérations purement spirituelles : il aborde également des défis sociaux contemporains tels que les promesses non tenues, les projets communautaires et les problèmes internationaux. Son approche critique de ces enjeux révèle son souci pour la justice et la résilience face aux épreuves, tout en renforçant l’importance de l’authenticité et de l’intégrité. \n\n En tant que prédicateur,Pasteur Léonard Baruti Kasongo met un point d’honneur à souligner l’importance de la communauté, du sacrifice et de l’intercession dans la vie des croyants. Il appelle à une transformation personnelle et collective, s’appuyant sur des messages prophétiques pour inspirer la quête de connaissance, la foi et le changement. À travers des leçons tirées de l'histoire et des réflexions sur l'héritage culturel, il incite ses auditeurs à reconnaître leur rôle dans le renforcement de la solidarité et de l’unité. \n\n Enfin, son prédication se conclut sur un appel vibrant à l'espoir, à la foi et à l'adaptation face aux défis du monde. Cela reflète son talent exceptionnel à intégrer des thèmes bibliques intemporels dans des réalités actuelles, tout en guidant spirituellement ses auditeurs vers une vie plus édifiante et ancrée dans la foi. En somme, Léonard Baruti Kasongo se révèle être un prédicateur inspiré et engagé, un guide spirituel capable d'éclairer et de transformer ceux qui l'écoutent.",
       },
     ],
   },
@@ -87,13 +85,12 @@ export const datas = [
       "Le parcours de Simeon MAKILA LUKIAN est un exemple de détermination, de courage et d'optimisme. Il a surmonté de nombreux obstacles pour devenir un ingénieur respecté et talentueux, et il a inspiré de nombreuses personnes tout au long de sa vie. \n\n Ses réalisations ont été rendues possibles grâce à son travail acharné, sa passion pour l'apprentissage et sa détermination à réussir. Il a laissé un héritage durable pour sa famille, ses amis et ses collègues, qui se souviendront toujours de lui avec respect et affection.",
     souvenirs: [
       {
-        image:
-          "https://res.cloudinary.com/dwh18htmr/image/upload/v1718640298/asodec_p4agn1.png",
-        date: "20 Juin 1990",
-        title:
-          "Elu Pasteur de l’assemblée chrétienne de Righini, aujourd’hui Baruti Tabernacle.",
+        image: "",
+        videos:
+          "https://www.youtube.com/watch?app=desktop&v=16kKZeDplh0&list=PLexgwzpzflt5WGE2qlYvsZU1SfWMPueo6&index=1",
+        title: "22 Novembre 2020 - La Brèche",
         description:
-          "Quis quis consequat cillum cupidatat reprehenderit sit et ullamco incididunt ad et dolore velit tempor. Deserunt enim cillum veniam incididunt reprehenderit labore. Eu mollit laboris consequat eu aliqua. Dolor pariatur minim amet amet esse sit adipisicing est fugiat minim dolore. Commodo ullamco adipisicing ea sit reprehenderit enim qui elit ut aliquip esse esse pariatur sint. Aute ea et sunt consequat voluptate. Sunt occaecat ipsum minim esse exercitation do deserunt eu fugiat cillum veniam.",
+          "Dans cette prédication, Pasteur Léonard Baruti Kasongo démontre sa profonde capacité à mêler spiritualité, actualité sociale et réflexions culturelles pour toucher le cœur et l'esprit de ses auditeurs. Son message commence par une exploration des émotions humaines à travers la musique, qu'il utilise comme une porte d'entrée pour aborder des thèmes plus profonds comme la rédemption, la responsabilité humaine et l'autorité divine sur la nature. En se référant au jardin d'Éden et à la vie éternelle, il invite son public à une introspection spirituelle et à une compréhension plus large de leur relation avec Dieu. \n\n Il ne s’arrête pas aux considérations purement spirituelles : il aborde également des défis sociaux contemporains tels que les promesses non tenues, les projets communautaires et les problèmes internationaux. Son approche critique de ces enjeux révèle son souci pour la justice et la résilience face aux épreuves, tout en renforçant l’importance de l’authenticité et de l’intégrité. \n\n En tant que prédicateur,Pasteur Léonard Baruti Kasongo met un point d’honneur à souligner l’importance de la communauté, du sacrifice et de l’intercession dans la vie des croyants. Il appelle à une transformation personnelle et collective, s’appuyant sur des messages prophétiques pour inspirer la quête de connaissance, la foi et le changement. À travers des leçons tirées de l'histoire et des réflexions sur l'héritage culturel, il incite ses auditeurs à reconnaître leur rôle dans le renforcement de la solidarité et de l’unité. \n\n Enfin, son prédication se conclut sur un appel vibrant à l'espoir, à la foi et à l'adaptation face aux défis du monde. Cela reflète son talent exceptionnel à intégrer des thèmes bibliques intemporels dans des réalités actuelles, tout en guidant spirituellement ses auditeurs vers une vie plus édifiante et ancrée dans la foi. En somme, Léonard Baruti Kasongo se révèle être un prédicateur inspiré et engagé, un guide spirituel capable d'éclairer et de transformer ceux qui l'écoutent.",
       },
     ],
   },

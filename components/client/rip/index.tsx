@@ -1,21 +1,8 @@
 "use client";
 import Image from "next/image";
-import avatar from "@/assets/demo/Avatar.jpg";
 import { useRouter } from "next/navigation";
-import photo1 from "@/assets/demo/memories/businessman.jpg";
-import photo2 from "@/assets/demo/memories/latino.jpg";
-import photo3 from "@/assets/demo/memories/latino.jpg";
 import BaseContainer from "../../layout/container";
 import { ButtonLink } from "../../ui/button";
-import TitleSection from "../../layout/title/section";
-import { Slide } from "../../ui/carousel/slide";
-
-interface Souvenir {
-  image: string;
-  date: string;
-  title: string;
-  description: string;
-}
 
 export type Props = {
   className?: string;
@@ -58,7 +45,7 @@ const MemorialSection = ({
   const router = useRouter();
 
   return (
-    <BaseContainer>
+    <BaseContainer className="mb-20">
       <div className="flex flex-col justify-center items-center lg:items-start lg:justify-start lg:flex-row lg:gap-10">
         <Image
           src={profile_image}
