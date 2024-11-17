@@ -81,7 +81,7 @@ const MemorialSection = ({
                 </p>
               </div>
             </div>
-            <p className=" lg:text-start mt-6 text-primary-900 text-center">
+            <p className="mt-6 text-primary-900">
               <span
                 dangerouslySetInnerHTML={{
                   __html: summary
