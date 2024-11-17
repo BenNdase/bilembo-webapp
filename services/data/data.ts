@@ -1,3 +1,5 @@
+import { time } from "console";
+
 export const datas = [
   {
     id: 1,
@@ -49,6 +51,13 @@ export const datas = [
         title: "22 Novembre 2020 - La Brèche",
         description:
           "Dans cette prédication, Pasteur Léonard Baruti Kasongo démontre sa profonde capacité à mêler spiritualité, actualité sociale et réflexions culturelles pour toucher le cœur et l'esprit de ses auditeurs. Son message commence par une exploration des émotions humaines à travers la musique, qu'il utilise comme une porte d'entrée pour aborder des thèmes plus profonds comme la rédemption, la responsabilité humaine et l'autorité divine sur la nature. En se référant au jardin d'Éden et à la vie éternelle, il invite son public à une introspection spirituelle et à une compréhension plus large de leur relation avec Dieu. \n\n Il ne s’arrête pas aux considérations purement spirituelles : il aborde également des défis sociaux contemporains tels que les promesses non tenues, les projets communautaires et les problèmes internationaux. Son approche critique de ces enjeux révèle son souci pour la justice et la résilience face aux épreuves, tout en renforçant l’importance de l’authenticité et de l’intégrité. \n\n En tant que prédicateur,Pasteur Léonard Baruti Kasongo met un point d’honneur à souligner l’importance de la communauté, du sacrifice et de l’intercession dans la vie des croyants. Il appelle à une transformation personnelle et collective, s’appuyant sur des messages prophétiques pour inspirer la quête de connaissance, la foi et le changement. À travers des leçons tirées de l'histoire et des réflexions sur l'héritage culturel, il incite ses auditeurs à reconnaître leur rôle dans le renforcement de la solidarité et de l’unité. \n\n Enfin, son prédication se conclut sur un appel vibrant à l'espoir, à la foi et à l'adaptation face aux défis du monde. Cela reflète son talent exceptionnel à intégrer des thèmes bibliques intemporels dans des réalités actuelles, tout en guidant spirituellement ses auditeurs vers une vie plus édifiante et ancrée dans la foi. En somme, Léonard Baruti Kasongo se révèle être un prédicateur inspiré et engagé, un guide spirituel capable d'éclairer et de transformer ceux qui l'écoutent.",
+      },
+      {
+        image: "",
+        videos: "https://www.youtube.com/embed/fCMcM8Ek0ok?si=_MD1-Rny4Bln6MF5",
+        title: "25 Novembre 2020 - Le Premier Sceau ",
+        description:
+          "Léonard Baruti Kasongo fut un prédicateur visionnaire dont les enseignements sur le **Premier Sceau** du 25 novembre 2020 restent gravés dans les mémoires. Sa prédication offrait une plongée profonde dans des thèmes spirituels et religieux, articulant des révélations bibliques, des mystères divins et des prophéties. Avec une précision impressionnante, il liait ces vérités intemporelles aux réalités quotidiennes, mettant en évidence l’importance de la foi et de la compréhension des Écritures. \n\n La prédication explorait des thèmes variés, tels que les messages spirituels transmis à travers les Écritures, l'impact des mystères divins sur la vie humaine, et les prophéties en lien avec des événements contemporains. Baruti soulignait l’importance de la transmission des messages divins et leur rôle dans la transformation des croyants. Il abordait également les défis sociaux et politiques, notamment en évoquant des situations comme Gaza et le Congo, tout en appelant à la résilience et à la vérité. \n\n Au fil du sermon, il développait des réflexions sur les interactions humaines, les tensions sociétales et les expériences passées, toujours dans une perspective spirituelle et prophétique. Son message était marqué par un appel à surmonter les défis de l’époque actuelle par la foi, la prière et le soutien mutuel. Baruti mettait également en lumière les enjeux environnementaux et culturels, tout en soulignant l’importance d’un esprit libre et créatif pour affronter les défis contemporains.",
       },
     ],
   },
