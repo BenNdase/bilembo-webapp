@@ -4,7 +4,7 @@ import photo2 from "@/assets/demo/memories/businessman.jpg";
 import BaseContainer from "../../../layout/container";
 import TitleSection from "../../../layout/title/section";
 
-const MemoriesSection = () => {
+const MemoriesRipSection = () => {
   return (
     <BaseContainer className="mb-10">
       <TitleSection title="Souvenirs" />
@@ -26,4 +26,4 @@ const MemoriesSection = () => {
   );
 };
 
-export default MemoriesSection;
+export default MemoriesRipSection;

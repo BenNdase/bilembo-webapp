@@ -26,6 +26,8 @@ const Navbar: React.FC<Props> = ({ className, width }) => {
     e.preventDefault();
     router.push("/contact");
   };
+  // Vérifiez si le pathname correspond à votre condition
+  const shouldDisplayComponent = pathname.startsWith("/memorial");
 
   const ChangeNavbar = () => {
     if (pathname === "/memorial/demo" || pathname === "/memorial/rip") {
@@ -42,7 +44,10 @@ const Navbar: React.FC<Props> = ({ className, width }) => {
   };
 
   const ChangeNavbarDemo = () => {
-    if (pathname === "/memorial/demo" || pathname === "/memorial/rip") {
+    if (
+      pathname === "/memorial/demo" ||
+      pathname === "/memorial/leonard_baruti_kasongo"
+    ) {
       return "lg:flex lg:w-4/12";
     } else if (pathname === "/memorial/demo/biographie") {
       return "lg:flex lg:w-4/12";
@@ -67,80 +72,96 @@ const Navbar: React.FC<Props> = ({ className, width }) => {
             />
           </a>
         </div>
-        <div
-          className={`hidden lg:flex gap-6 lg:w-5/12 items-center justify-center ${
-            pathname === "/memorial/demo" || pathname === "/memorial/rip"
-              ? "lg:hidden"
-              : "hidden"
-          } ${
-            pathname === "/memorial/demo/biographie" ? "lg:hidden" : "hidden"
-          } ${
-            pathname === "/memorial/demo/souvenirs" ? "lg:hidden" : "hidden"
-          } ${
-            pathname === "/memorial/demo/temoignages" ? "lg:hidden" : "hidden"
-          }`}
-        >
-          <a
-            href="/qui_sommes_nous"
-            className={`text-center hover:font-bold ${
-              pathname === "/qui_sommes_nous" ? "font-bold" : "font-normal"
+        {shouldDisplayComponent ? (
+          <div
+            className={`hidden lg:flex items-center justify-center gap-5 lg:w-5/12 ${ChangeNavbarDemo()} `}
+          >
+            <a
+              href="/memorial/demo/biographie"
+              className={`text-center hover:font-bold ${
+                pathname === "/memorial/demo/biographie"
+                  ? "font-bold"
+                  : "font-normal"
+              } ${
+                pathname === "/memorial/leonard_baruti_kasongo"
+                  ? "font-bold"
+                  : "font-normal"
+              }`}
+            >
+              Biographie
+            </a>
+            <a
+              href="/memorial/demo/souvenirs"
+              className={`text-center hover:font-bold ${
+                pathname === "/memorial/demo/souvenirs"
+                  ? "font-bold"
+                  : "font-normal"
+              } ${
+                pathname === "/memorial/leonard_baruti_kasongo/souvenirs"
+                  ? "font-bold"
+                  : "font-normal"
+              }`}
+            >
+              Souvenirs
+            </a>
+            <a
+              href="/memorial/demo/temoignages"
+              className={`text-center hover:font-bold ${
+                pathname === "/memorial/demo/temoignages"
+                  ? "font-bold"
+                  : "font-normal"
+              } ${
+                pathname === "/memorial/leonard_baruti_kasongo/temoignages"
+                  ? "font-bold"
+                  : "font-normal"
+              }`}
+            >
+              Témoignages
+            </a>
+          </div>
+        ) : (
+          <div
+            className={`hidden lg:flex gap-6 lg:w-5/12 items-center justify-center ${
+              pathname === "/memorial/demo" || pathname === "/memorial/rip"
+                ? "lg:hidden"
+                : "hidden"
+            } ${
+              pathname === "/memorial/demo/biographie" ? "lg:hidden" : "hidden"
+            } ${
+              pathname === "/memorial/demo/souvenirs" ? "lg:hidden" : "hidden"
+            } ${
+              pathname === "/memorial/demo/temoignages" ? "lg:hidden" : "hidden"
             }`}
           >
-            Qui sommes nous
-          </a>
-          <a
-            href="/comment_ca_marche"
-            className={`text-center hover:font-bold ${
-              pathname === "/comment_ca_marche" ? "font-bold" : "font-normal"
-            }`}
-          >
-            Comment ça marche
-          </a>
-          <a
-            href="/memorial/demo/biographie"
-            className={`text-center hover:font-bold ${
-              pathname === "/memorial/demo/biographie"
-                ? "font-bold"
-                : "font-normal"
-            }`}
-          >
-            Démo
-          </a>
-        </div>
-        <div
-          className={`hidden lg:flex items-center justify-center gap-5 lg:w-5/12 ${ChangeNavbarDemo()} `}
-        >
-          <a
-            href="/memorial/demo/biographie"
-            className={`text-center hover:font-bold ${
-              pathname === "/memorial/demo/biographie"
-                ? "font-bold"
-                : "font-normal"
-            }`}
-          >
-            Biographie
-          </a>
-          <a
-            href="/memorial/demo/souvenirs"
-            className={`text-center hover:font-bold ${
-              pathname === "/memorial/demo/souvenirs"
-                ? "font-bold"
-                : "font-normal"
-            }`}
-          >
-            Souvenirs
-          </a>
-          <a
-            href="/memorial/demo/temoignages"
-            className={`text-center hover:font-bold ${
-              pathname === "/memorial/demo/temoignages"
-                ? "font-bold"
-                : "font-normal"
-            }`}
-          >
-            Témoignages
-          </a>
-        </div>
+            <a
+              href="/qui_sommes_nous"
+              className={`text-center hover:font-bold ${
+                pathname === "/qui_sommes_nous" ? "font-bold" : "font-normal"
+              }`}
+            >
+              Qui sommes nous
+            </a>
+            <a
+              href="/comment_ca_marche"
+              className={`text-center hover:font-bold ${
+                pathname === "/comment_ca_marche" ? "font-bold" : "font-normal"
+              }`}
+            >
+              Comment ça marche
+            </a>
+            <a
+              href="/memorial/demo/biographie"
+              className={`text-center hover:font-bold ${
+                pathname === "/memorial/demo/biographie"
+                  ? "font-bold"
+                  : "font-normal"
+              }`}
+            >
+              Démo
+            </a>
+          </div>
+        )}
+
         <div className="hidden lg:flex justify-end items-center lg:w-4/12">
           <ButtonLink
             handleClick={() => router.push("/contact")}

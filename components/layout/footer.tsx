@@ -8,60 +8,45 @@ import TwitterIcon from "../ui/icons/twitter";
 import LinkedinIcon from "../ui/icons/linkedin";
 import { usePathname } from "next/navigation";
 import TabsDemo from "../client/demo/tabs";
+import TabsRipBaruti from "../client/rip/baruti_tabs";
 
 const Footer = () => {
   const pathname = usePathname();
 
-  const BottomFooter = () => {
-    if (pathname === "/memorial/demo") {
-      return "block";
-    } else if (pathname === "/memorial/demo/biographie") {
-      return "block";
-    } else if (pathname === "/memorial/demo/souvenirs") {
-      return "block";
-    } else if (pathname === "/memorial/demo/temoignages") {
-      return "block";
-    } else {
-      return "hidden";
-    }
-  };
+  // Déterminez si TabsDemo doit être affiché
+  const shouldDisplayTabs =
+    pathname.startsWith("/memorial") &&
+    pathname !== "/memorial/leonard_baruti_kasongo";
+
+  const shouldDisplayTabsBaruti = pathname.startsWith(
+    "/memorial/leonard_baruti_kasongo"
+  );
 
   return (
     <>
-      <BaseContainer>
-        <hr
-          color="#272727"
-          className={`${
-            pathname === "/memorial/demo" ? "hidden lg:block" : "block"
-          } ${
-            pathname === "/memorial/demo/biographie"
-              ? "hidden lg:block"
-              : "block"
-          } ${
-            pathname === "/memorial/demo/souvenirs"
-              ? "hidden lg:block"
-              : "block"
-          } ${
-            pathname === "/memorial/demo/temoignages"
-              ? "hidden lg:block"
-              : "block"
-          }`}
-        />
-        <div
-          className={`flex flex-col lg:flex-row lg:justify-between ${
-            pathname === "/memorial/demo" ? "hidden lg:flex" : "block"
-          } ${
-            pathname === "/memorial/demo/biographie"
-              ? "hidden lg:flex"
-              : "block"
-          } ${
-            pathname === "/memorial/demo/souvenirs" ? "hidden lg:flex" : "block"
-          } ${
-            pathname === "/memorial/demo/temoignages"
-              ? "hidden lg:flex"
-              : "block"
-          }`}
-        >
+      {shouldDisplayTabs ? (
+        <div className="sticky w-full bottom-0 z-50 block lg:hidden">
+          <div>
+            <TabsDemo />
+          </div>
+        </div>
+      ) : null}
+
+      {shouldDisplayTabsBaruti ? (
+        <div className="sticky w-full bottom-0 z-50 block lg:hidden">
+          <div>
+            <TabsRipBaruti />
+          </div>
+        </div>
+      ) : null}
+
+      <BaseContainer
+        className={`${
+          pathname.startsWith("/memorial") ? "hidden lg:block" : "block"
+        }`}
+      >
+        <hr color="#272727" />
+        <div className={`flex flex-col lg:flex-row lg:justify-between`}>
           <div className="lg:w-5/12">
             <div>
               <Image
@@ -140,19 +125,7 @@ const Footer = () => {
         </div>
         <p
           className={`font-bold text-md py-4 lg:text-center lg:font-semibold lg:py-8 ${
-            pathname === "/memorial/demo" ? "hidden lg:block" : "block"
-          } ${
-            pathname === "/memorial/demo/biographie"
-              ? "hidden lg:block lg:text-center lg:font-semibold lg:py-8"
-              : "block"
-          } ${
-            pathname === "/memorial/demo/souvenirs"
-              ? "hidden lg:block lg:text-center lg:font-semibold lg:py-8"
-              : "block"
-          } ${
-            pathname === "/memorial/demo/temoignages"
-              ? "hidden lg:block lg:text-center lg:font-semibold lg:py-8"
-              : "block"
+            shouldDisplayTabs ? "hidden lg:block" : "block"
           }`}
         >
           Copyright © 2023 Fait par{" "}
@@ -161,13 +134,6 @@ const Footer = () => {
           </a>
         </p>
       </BaseContainer>
-      <div
-        className={`sticky w-full bottom-0 z-50 ${BottomFooter()} lg:hidden`}
-      >
-        <div>
-          <TabsDemo />
-        </div>
-      </div>
     </>
   );
 };

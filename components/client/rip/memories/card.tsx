@@ -27,19 +27,19 @@ const MemoriesCard: React.FC<Props> = ({
 }) => {
   return (
     <Card placeholder="" shadow={false} className="mt-6 w-full">
-      <div className="flex items-start">
+      <div className="lg:flex items-start">
         <div className="">
           <Image
             src={src}
             alt={`${alt}`}
-            className="object-cover h-[14rem] w-[150rem]"
+            className="object-cover w-full object-top h-[17rem] lg:w-[150rem]"
           />
         </div>
-        <CardBody placeholder="">
-          <h5 color="blue-gray" className="-mt-5 font-extrabold text-lg">
+        <CardBody placeholder="" className="px-0">
+          <h5 color="blue-gray" className="font-extrabold text-lg">
             {title}
           </h5>
-          <p>{description}</p>
+          <p className="mt-2">{description}</p>
         </CardBody>
       </div>
     </Card>

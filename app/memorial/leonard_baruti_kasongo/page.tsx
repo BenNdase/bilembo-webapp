@@ -1,4 +1,5 @@
 import MemorialSection from "@/components/client/rip";
+import TabsRipBaruti from "@/components/client/rip/baruti_tabs";
 import Layout from "@/components/layout/layout";
 import { datas } from "@/services/data/data";
 
