@@ -22,7 +22,12 @@ export interface Memorial {
   youth_training: string;
   career: string;
   images: string[];
-  souvenirs?: Souvenir[];
+  souvenirs?: {
+    image?: string;
+    videos?: string; // Si `videos` peut être une URL ou un tableau, ajustez ici
+    title: string;
+    description: string;
+  }[];
   cause_death: string;
   epilogue: string;
 }
