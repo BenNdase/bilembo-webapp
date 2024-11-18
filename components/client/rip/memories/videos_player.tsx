@@ -6,21 +6,18 @@ interface VideoPlayerProps {
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoURL }) => {
   return (
-    <div
-      style={{ position: "relative", paddingTop: "56.25%" /* Ratio 16:9 */ }}
-    >
+    <div style={{ position: "relative" /* Ratio 16:9 */ }}>
       <iframe
         src={videoURL}
         title="YouTube video player"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
+        className="w-full h-[17rem] lg:h-[27rem]"
         style={{
-          position: "absolute",
+          position: "relative",
           top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
+          left: 0, // Largeur minimale
         }}
       ></iframe>
     </div>

@@ -36,11 +36,12 @@ const MemoriesCard: React.FC<Props> = ({
         className="object-cover w-full object-top h-[17rem] lg:w-[150rem]"
       />;
     }
+    return null;
   };
 
   return (
     <Card placeholder="" shadow={false} className="mt-6 w-full">
-      <div className="lg:flex items-start">
+      <div className="">
         <div className="">{memoriesCondition()}</div>
         <CardBody placeholder="" className="px-0">
           <h5 color="blue-gray" className="font-extrabold text-lg">

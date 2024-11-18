@@ -12,6 +12,8 @@ import MenuIcon from "../ui/icons/menu";
 import { DefaultSidebar } from "../ui/sidebar";
 import { ButtonLink } from "../ui/button";
 import { useRouter, usePathname } from "next/navigation";
+import DemoNavigation from "./navigation/demo";
+import BarutiNavigation from "./navigation/memories/baruti";
 
 export type Props = {
   className?: string;
@@ -28,6 +30,10 @@ const Navbar: React.FC<Props> = ({ className, width }) => {
   };
   // Vérifiez si le pathname correspond à votre condition
   const shouldDisplayComponent = pathname.startsWith("/memorial");
+
+  const shouldDisplayComponentBaruti = pathname.startsWith(
+    "/memorial/leonard_baruti_kasongo"
+  );
 
   const ChangeNavbar = () => {
     if (pathname === "/memorial/demo" || pathname === "/memorial/rip") {
@@ -73,52 +79,10 @@ const Navbar: React.FC<Props> = ({ className, width }) => {
           </a>
         </div>
         {shouldDisplayComponent ? (
-          <div
-            className={`hidden lg:flex items-center justify-center gap-5 lg:w-5/12 ${ChangeNavbarDemo()} `}
-          >
-            <a
-              href="/memorial/demo/biographie"
-              className={`text-center hover:font-bold ${
-                pathname === "/memorial/demo/biographie"
-                  ? "font-bold"
-                  : "font-normal"
-              } ${
-                pathname === "/memorial/leonard_baruti_kasongo"
-                  ? "font-bold"
-                  : "font-normal"
-              }`}
-            >
-              Biographie
-            </a>
-            <a
-              href="/memorial/demo/souvenirs"
-              className={`text-center hover:font-bold ${
-                pathname === "/memorial/demo/souvenirs"
-                  ? "font-bold"
-                  : "font-normal"
-              } ${
-                pathname === "/memorial/leonard_baruti_kasongo/souvenirs"
-                  ? "font-bold"
-                  : "font-normal"
-              }`}
-            >
-              Souvenirs
-            </a>
-            <a
-              href="/memorial/demo/temoignages"
-              className={`text-center hover:font-bold ${
-                pathname === "/memorial/demo/temoignages"
-                  ? "font-bold"
-                  : "font-normal"
-              } ${
-                pathname === "/memorial/leonard_baruti_kasongo/temoignages"
-                  ? "font-bold"
-                  : "font-normal"
-              }`}
-            >
-              Témoignages
-            </a>
-          </div>
+          <>
+            <DemoNavigation />
+            <BarutiNavigation />
+          </>
         ) : (
           <div
             className={`hidden lg:flex gap-6 lg:w-5/12 items-center justify-center ${
